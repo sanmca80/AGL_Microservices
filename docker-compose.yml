@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  agl_microservices:
+    image: ${DOCKER_REGISTRY-}aglmicroservices
+    build:
+      context: .
+      dockerfile: AGL_Microservices\Dockerfile
+
+  authenticationservices:
+    image: ${DOCKER_REGISTRY-}authenticationservices
+    build:
+      context: .
+      dockerfile: AuthenticationServices\Dockerfile
+
+
+  gatewayservices:
+    image: ${DOCKER_REGISTRY-}gatewayservices
+    build:
+      context: .
+      dockerfile: Gatewayservices\Dockerfile
+
