@@ -7,11 +7,11 @@ services:
       context: .
       dockerfile: AGL_Microservices\Dockerfile
 
-  authenticationservices:
-    image: ${DOCKER_REGISTRY-}authenticationservices
-    build:
-      context: .
-      dockerfile: AuthenticationServices\Dockerfile
+  #authenticationservices:
+  #  image: ${DOCKER_REGISTRY-}authenticationservices
+  #  build:
+  #    context: .
+  #    dockerfile: AuthenticationServices\Dockerfile
 
 
   gatewayservices:
